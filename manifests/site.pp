@@ -57,6 +57,13 @@ node default {
     creates => '/etc/motd',
     }
     
+    host { 'testing.puppetlabs.vm':
+      ensure => present,
+      ip     => '127.0.0.1'.
+      }
+    
     notify {"P is for puppet, that's good enough for me ... ${::hostname}":}
+    
+    
 
 }

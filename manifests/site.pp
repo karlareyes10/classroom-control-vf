@@ -44,8 +44,9 @@ node default {
   #   class { 'my_class': }
   #notify { "Hello, my name is ${::hostname}": }
   
-  include memcached
+  #include memcached
   #include skeleton
+  include nginx
 
     
   #notify {"P is for puppet, that's good enough for me ... ${::hostname}":}

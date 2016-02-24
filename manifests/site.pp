@@ -44,8 +44,8 @@ node default {
   #   class { 'my_class': }
   #notify { "Hello, my name is ${::hostname}": }
   
-  include users
-  include skeleton
+  #include users
+  #include skeleton
 
     
   #notify {"P is for puppet, that's good enough for me ... ${::hostname}":}

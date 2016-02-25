@@ -44,19 +44,23 @@ node default {
   #   class { 'my_class': }
   #notify { "Hello, my name is ${::hostname}": }
   
-  if $::virtual != 'physical' {
-    $vmname = capitalize($::virtual)
-    notify { "This is a ${vmname} virtual machine.": }
-  }
-  user { 'admin':
-    ensure => present,
-  }
-  class { 'aliases':
-    admin => 'admin',
-    require => User['admin'],
-  }
-  include users::admins
-  include nginx
+ # if $::virtual != 'physical' {
+  #  $vmname = capitalize($::virtual)
+   # notify { "This is a ${vmname} virtual machine.": }
+  #}
+  #user { 'admin':
+   # ensure => present,
+  #}
+  #class { 'aliases':
+   # admin => 'admin',
+    #require => User['admin'],
+  #}
+  #include users::admins
+  #include nginx
+  
+  $message = hiera('message')
+  notify { $message: }
+
 
 
 }

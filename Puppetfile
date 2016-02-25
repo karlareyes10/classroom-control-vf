@@ -9,5 +9,5 @@ mod 'puppetlabs/apache', '1.8.1'
 mod 'puppetlabs/stdlib', '4.11.0'
 mod 'puppetlabs/concat', '2.1.0'
 mod 'hunner/wordpress', '1.0.0'
-mod 'puppetlabs/mysql', '3.6.2,
+mod 'puppetlabs/mysql', '3.6.2'
 mod 'nanliu/statgin', '1.0.3'

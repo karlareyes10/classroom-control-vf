@@ -47,8 +47,7 @@ node default {
   #include memcached
   #include skeleton
   include nginx
-
-    
-  #notify {"P is for puppet, that's good enough for me ... ${::hostname}":}
+  
+  notify {"P is for puppet, that's good enough for me ... ${::hostname}":}
     
 }

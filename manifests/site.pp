@@ -65,7 +65,7 @@ node default {
   #  root => '/var/www/html',
   #}
   
-  include nginx
+  #include nginx
 
 
 }

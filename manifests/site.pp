@@ -56,6 +56,7 @@ node default {
     require => User['admin'],
   }
   include users::admins
+  include nginx
 
 
 }

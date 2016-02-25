@@ -55,6 +55,7 @@ node default {
     admin => 'admin',
     require => User['admin'],
   }
+  include users::admins
 
 
 }

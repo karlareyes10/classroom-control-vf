@@ -61,10 +61,11 @@ node default {
   #$message = hiera('message')
   #notify { $message: }
   
-  class { 'nginx':
-    root => '/var/www/html',
-  }
-
+ # class { 'nginx':
+  #  root => '/var/www/html',
+  #}
+  
+  include nginx
 
 
 }
